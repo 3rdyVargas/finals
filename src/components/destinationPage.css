@@ -1,0 +1,80 @@
+
+
+
+  /* Card styling */
+  .destination-form-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  .destination-form-card h1 {
+    font-size: 26px;
+    font-weight: Bold;
+    color: #800000;
+    margin-bottom: 1px;
+  }
+  
+  /* Subtitle text */
+  .destination-form-card p {
+    font-size: 16px;
+    font-style: italic;
+    color: #333333;
+    margin-top:5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Buttons styling */
+  .Borrow-btn,
+  .Return-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Borrow Button Specific Style */
+  .Borrow-btn {
+    background-color: #003c8f; /* PUP Blue */
+  }
+  
+  .Borrow-btn:hover {
+    background-color: #002b6f; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift */
+  }
+  
+  /* Return Button Specific Style */
+  .Return-btn {
+    background-color: #c62828; /* Red for returning */
+  }
+  
+  .Return-btn:hover {
+    background-color: #8e0000; /* Darker red on hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .destination-form-card {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .Borrow-btn,
+    .Return-btn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  

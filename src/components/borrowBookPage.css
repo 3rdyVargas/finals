@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../assets/pupbg3.jpg"); /* Adjust the path based on where you place the image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh; /* Ensures body takes at least full height of the screen */
+  padding: 0 20px; /* Add padding to avoid the form touching the edges */
+}
+
+/* Card */
+.form-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* White background for the card */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.form-card h1 {
+  color: #800000; /* Maroon color */
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+/* Subtitle */
+.form-card p {
+  color: #6b7280;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+/* Form Fields */
+.form-field {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-field label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+  display: block;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #800000; /* Maroon focus border */
+}
+
+.form-field select {
+  background-color: #f9fafb;
+}
+
+/* Styling for Month, Day, Year to make them align horizontally */
+.date-of-birth {
+  display: flex;
+  justify-content: space-between; /* Spaces out the items */
+  gap: 10px; /* Adds a gap between the selects */
+  width: 100%;
+}
+
+.date-of-birth .form-field {
+  width: 30%; /* Makes each select field take up 30% of the available width */
+}
+
+.date-of-birth .form-field select {
+  width: 100%; /* Ensures each select fills the container */
+}
+
+/* Button */
+.Enter-btn {
+  background-color: #800000; /* Maroon button */
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Enter-btn:hover {
+  background-color: #6b1d1d; /* Dark Maroon on hover */
+}
+
+.Enter-btn:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-card {
+    padding: 20px;
+  }
+
+  .form-card h1 {
+    font-size: 2rem;
+  }
+
+  .form-card p {
+    font-size: 1rem;
+  }
+
+  /* Stack month, day, and year on smaller screens */
+  .date-of-birth {
+    flex-direction: column;
+  }
+
+  .date-of-birth .form-field {
+    width: 100%;
+  }
+}
